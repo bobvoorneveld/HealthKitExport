@@ -11,6 +11,8 @@
 		C40D96142A30972400CC3225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D96132A30972400CC3225 /* ContentView.swift */; };
 		C40D96162A30972400CC3225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40D96152A30972400CC3225 /* Assets.xcassets */; };
 		C40D96192A30972400CC3225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40D96182A30972400CC3225 /* Preview Assets.xcassets */; };
+		C40D96212A309D3700CC3225 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D96202A309D3700CC3225 /* WorkoutView.swift */; };
+		C4AE64832A30BC0B00722A4F /* HKWorkoutActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE64822A30BC0B00722A4F /* HKWorkoutActivityType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		C40D96132A30972400CC3225 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C40D96152A30972400CC3225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C40D96182A30972400CC3225 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C40D961F2A30977A00CC3225 /* HealthKitExport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitExport.entitlements; sourceTree = "<group>"; };
+		C40D96202A309D3700CC3225 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		C4AE64822A30BC0B00722A4F /* HKWorkoutActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKWorkoutActivityType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		C40D96102A30972300CC3225 /* HealthKitExport */ = {
 			isa = PBXGroup;
 			children = (
+				C40D961F2A30977A00CC3225 /* HealthKitExport.entitlements */,
 				C40D96112A30972300CC3225 /* HealthKitExportApp.swift */,
 				C40D96132A30972400CC3225 /* ContentView.swift */,
 				C40D96152A30972400CC3225 /* Assets.xcassets */,
 				C40D96172A30972400CC3225 /* Preview Content */,
+				C40D96202A309D3700CC3225 /* WorkoutView.swift */,
+				C4AE64822A30BC0B00722A4F /* HKWorkoutActivityType.swift */,
 			);
 			path = HealthKitExport;
 			sourceTree = "<group>";
@@ -138,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40D96142A30972400CC3225 /* ContentView.swift in Sources */,
+				C40D96212A309D3700CC3225 /* WorkoutView.swift in Sources */,
 				C40D96122A30972300CC3225 /* HealthKitExportApp.swift in Sources */,
+				C4AE64832A30BC0B00722A4F /* HKWorkoutActivityType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +274,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitExport/HealthKitExport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitExport/Preview Content\"";
 				DEVELOPMENT_TEAM = VD43MWKKT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need to look to your cycling data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +305,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitExport/HealthKitExport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitExport/Preview Content\"";
 				DEVELOPMENT_TEAM = VD43MWKKT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Need to look to your cycling data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
